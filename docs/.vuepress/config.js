@@ -1,7 +1,6 @@
 module.exports = {
   title: 'PeTi',
   description: 'Pembayaran Tagihan PDAM Tirta Tarum Kabupaten Karawang',
-  base: process.env.NODE_ENV === 'production' ? '/docs/' : '/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
