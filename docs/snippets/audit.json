@@ -1,0 +1,71 @@
+[
+  {
+    "jumlah_tagihan": 93000,
+    "jumlah_bayar": 98000,
+    "jumlah_masalah": 5000,
+    "lembar_tagihan": 2,
+    "lembar_bayar": 2,
+    "lembar_masalah": 0,
+    "periode_tagihan": [
+      201902,
+      201903
+    ],
+    "periode_bayar": [
+      201902,
+      201903
+    ],
+    "periode_masalah": null,
+    "cid": "0201005078",
+    "pid": "67ory69cten",
+    "pat": "03B5A4AF5B9731E9E963",
+    "mer": "Tester",
+    "inq": "9af3dddd1926187a1b5ade2850bb79c6",
+    "nob": "DPHA19042299",
+    "rev": 0,
+    "pts": "2019-04-22 00:57:30"
+  },
+  {
+    "jumlah_tagihan": 41500,
+    "jumlah_bayar": 41500,
+    "jumlah_masalah": 0,
+    "lembar_tagihan": 1,
+    "lembar_bayar": 1,
+    "lembar_masalah": 0,
+    "periode_tagihan": [
+      201903
+    ],
+    "periode_bayar": [
+      201903
+    ],
+    "periode_masalah": null,
+    "cid": "0201009204",
+    "pid": "pub7btgc1y9",
+    "pat": "BDA057F54CFBDB62FECD",
+    "mer": "Tester",
+    "inq": "e902e871d6c11dd95b6b52bb19b269c8",
+    "nob": "DPHA19042299",
+    "rev": 0,
+    "pts": "2019-04-22 00:12:50"
+  },
+  {
+    "jumlah_tagihan": 41500,
+    "jumlah_bayar": 41500,
+    "jumlah_masalah": 0,
+    "lembar_tagihan": 1,
+    "lembar_bayar": 1,
+    "lembar_masalah": 0,
+    "periode_tagihan": [
+      201903
+    ],
+    "periode_bayar": 201903,
+    "periode_masalah": null,
+    "cid": "0202010221",
+    "pid": "457i7dja8vb",
+    "pat": "E8E042CE3F0DD0821103",
+    "mer": "Tester",
+    "inq": "fae27a82a8b90860d3e46231bc1372e3",
+    "nob": "DPHA19042299",
+    "rev": 0,
+    "pts": "2019-04-22 00:40:44"
+  }
+]

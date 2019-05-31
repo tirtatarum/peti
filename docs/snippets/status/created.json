@@ -1,0 +1,27 @@
+{
+  "status": "created",
+  "message": "payment in progress",
+  "data": {
+      "cid": "0203003617",
+      "pid": "f65xh3oy91p",
+      "pat": "7C8FFBA5470F0811893A",
+      "pop": "90",
+      "mer": "noop",
+      "inq": "8f41793bc634cb9ca0137f514d5ebd3e",
+      "pts": 1555983356852,
+      "nob": "DPHA19042399"
+  },
+  "meta": {
+      "jumlah_tagihan": null,
+      "jumlah_bayar": 41500,
+      "jumlah_masalah": null,
+      "lembar_tagihan": null,
+      "lembar_bayar": 1,
+      "lembar_masalah": null,
+      "periode_tagihan": null,
+      "periode_bayar": [
+          201903
+      ],
+      "periode_masalah": null
+  }
+}

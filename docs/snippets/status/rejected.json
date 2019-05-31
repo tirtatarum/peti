@@ -1,0 +1,29 @@
+{
+  "status": "rejected",
+  "message": "paid before",
+  "data": {
+    "cid": "0201005231",
+    "pid": "xtymut1yltc",
+    "pat": "3C13E96B0F993681BE86",
+    "pop": "90",
+    "mer": "Tester",
+    "inq": "c2a0151c5ecabae7a6f429b8e082d8df",
+    "pts": 1555983356852,
+    "nob": "DPHA19042299"
+  },
+  "meta": {
+    "jumlah_tagihan": 0,
+    "jumlah_bayar": 41500,
+    "jumlah_masalah": 41500,
+    "lembar_tagihan": 0,
+    "lembar_bayar": 1,
+    "lembar_masalah": 1,
+    "periode_tagihan": null,
+    "periode_bayar": [
+      201903
+    ],
+    "periode_masalah": [
+      201903
+    ]
+  }
+}

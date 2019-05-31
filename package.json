@@ -1,0 +1,33 @@
+{
+  "name": "petid",
+  "version": "1.0.0",
+  "description": "Documentation for PeTi.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "vuepress build docs",
+    "start": "vuepress dev docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tirtatarum/peti.git"
+  },
+  "keywords": ["docs", "peti", "tirta tarum"],
+  "author": {
+    "name": "Eko Eryanto",
+    "email": "ekoeryanto@gmail.com",
+    "url": "https://eryanto.net"
+  },
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/tirtatarum/peti/issues"
+  },
+  "homepage": "https://github.com/tirtatarum/peti#readme",
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.48"
+  }
+}

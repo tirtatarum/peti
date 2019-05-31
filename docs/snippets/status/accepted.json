@@ -1,0 +1,29 @@
+{
+  "status": "accepted",
+  "message": "payment done",
+  "data": {
+    "cid": "0202010155",
+    "pid": "zvqfw114czo",
+    "pat": "E0FB3E729906390739C3",
+    "pop": "90",
+    "mer": "Tester",
+    "inq": "5392802b4bf1b921604363d31c194389",
+    "pts": 1555983356852,
+    "nob": "DPHA19042299"
+  },
+  "meta": {
+    "jumlah_tagihan": 41500,
+    "jumlah_bayar": 41500,
+    "jumlah_masalah": 0,
+    "lembar_tagihan": 1,
+    "lembar_bayar": 1,
+    "lembar_masalah": 0,
+    "periode_tagihan": [
+      201903
+    ],
+    "periode_bayar": [
+      201903
+    ],
+    "periode_masalah": null
+  }
+}

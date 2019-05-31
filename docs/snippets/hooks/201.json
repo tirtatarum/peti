@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "user-agent": "id.tirtatarum.peti/2.0.0-beta.1",
+    "content-type": "application/json;charset=utf-8",
+    "authorization": "Bearer jwt.token.is.here",
+    "content-length": "237"
+  },
+  "body": {
+    "status": "created",
+    "code": 201,
+    "message": "payment in progress",
+    "data": {
+      "cid": "0201007033",
+      "pid": "nl3twc5zmuk",
+      "pat": "EF9B845A6ACD8AD69FFE",
+      "mer": "Tester",
+      "inq": "2d5212e05bbfd46fbc62e3b64a4c230c",
+      "pts": 1555868673886,
+      "nob": "DPHA19042299"
+    }
+  }
+}

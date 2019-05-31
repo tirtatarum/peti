@@ -1,0 +1,29 @@
+{
+  "status": "changed",
+  "message": "payment done with suspect data",
+  "data": {
+    "cid": "0202009134",
+    "pid": "4sejzr7qy8h",
+    "pat": "F49D46B8BF9DE92564CC",
+    "pop": "90",
+    "mer": "Tester",
+    "inq": "8cf5eddb5fddc2a06b99703f0c74f25d",
+    "pts": 1555983356852,
+    "nob": "DPHA19042299"
+  },
+  "meta": {
+    "jumlah_tagihan": 46500,
+    "jumlah_bayar": 41500,
+    "jumlah_masalah": -5000,
+    "lembar_tagihan": 1,
+    "lembar_bayar": 1,
+    "lembar_masalah": 0,
+    "periode_tagihan": [
+      201903
+    ],
+    "periode_bayar": [
+      201903
+    ],
+    "periode_masalah": null
+  }
+}

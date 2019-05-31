@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "user-agent": "id.tirtatarum.peti/2.0.0-beta.1",
+    "content-type": "application/json;charset=utf-8",
+    "authorization": "Custom Token is Here",
+    "content-length": "471"
+  },
+  "body": {
+    "status": "changed",
+    "code": 206,
+    "message": "payment accepted with suspect data",
+    "data": {
+      "cid": "0201005078",
+      "pid": "67ory69cten",
+      "pat": "03B5A4AF5B9731E9E963",
+      "mer": "Tester",
+      "inq": "9af3dddd1926187a1b5ade2850bb79c6",
+      "pts": 1555869450247,
+      "nob": "DPHA19042299"
+    },
+    "meta": {
+      "jumlah_bayar": 98000,
+      "lembar_bayar": 2,
+      "periode_bayar": [
+        201902,
+        201903
+      ],
+      "jumlah_tagihan": 93000,
+      "jumlah_masalah": 5000,
+      "lembar_tagihan": 2,
+      "lembar_masalah": 0,
+      "periode_tagihan": [
+        201902,
+        201903
+      ],
+      "periode_masalah": null
+    }
+  }
+}
