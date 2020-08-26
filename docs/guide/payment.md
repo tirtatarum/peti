@@ -1,13 +1,7 @@
 # Payment
 
-PeTi melakukan pembayaran dengan metode __asyncronous__. Metode ini sebenarnya bukan hal yang baru,
-sejak awal pembukaan pembayaran online di PDAM Tirta Tarum sampai tahun 2017 metode ini digunakan untuk mempercepat proses pembayaran dikarenakan database billing berada di masing-masing cabang unit dengan kualitas koneksi yang kurang baik.
-
-Metode __asyncronous__ digunakan kembali untuk menghindari terjadinya pembatalan pembayaran oleh pelanggan dikarenakan proses pembayaran memakan waktu yang lama.
-
-## How it Works
-
-Saat proses pembayaran dilakukan, PeTi mengirimkan __task__ kepada __Job Server__, di sanalah proses pembayaran terjadi. __Job Server__ akan mencoba ulang pembayaran setiap 30 detik jika gagal.
+Pembayaran dilakukan secara **asyncronous**.
+Saat proses pembayaran dilakukan, **task** dikirim ke **Job Server**, di sanalah proses pembayaran terjadi. **Job Server** akan mencoba ulang kembali pembayaran jika gagal.
 
 ## Parameters
 
@@ -15,23 +9,23 @@ Berbeda dengan proses [inquiry](/guide/inquiry.html#request), pembayaran memerlu
 
 - inq `string`
 
-    Token yang didapatkan pada response header (x-cross-site) [inquiry](/guide/inquiry.html#response).
+  Token yang didapatkan pada response header (x-cross-site) [inquiry](/guide/inquiry.html#response).
 
 - amo `number`
 
-    Total tagihan keseluruhan pada [inquiry](/guide/inquiry.html#response).
+  Total tagihan keseluruhan pada [inquiry](/guide/inquiry.html#response).
 
 - per `number[]`
 
-    List periode tagihan pada [inquiry](/guide/inquiry.html#response).
+  List periode tagihan pada [inquiry](/guide/inquiry.html#response).
 
-- mer `string`
+- mer `number`
 
-    Nama atau ID _merchant_ untuk identifikasi dengan maksimal panjang 64 karakter.
+  Nama atau ID _merchant_ untuk identifikasi dengan maksimal panjang 4 digit.
 
 - pid `string`
 
-    Token unik sebagai bukti pembayaran dari mitra dengan maksimal panjang 64 karakter.
+  Token unik sebagai bukti pembayaran dari mitra dengan maksimal panjang 50 karakter.
 
 ## Request
 
@@ -43,9 +37,9 @@ Untuk request pembayaran sama seperti request pada [inquiry](/guide/inquiry.html
 curl -X POST \
 -H "Authorization: Bearer $JWT_TOKEN" \
 -H "Content-Type: application/json" \
--d '{"inq":"51f5793d30f9c2f63d15f077aa8ae72a","pid":"evid-123456","amo":345100,"mer":"warteg123","per":[201901,201902,201903]
+-d '{"inq":"51f5793d30f9c2f63d15f077aa8ae72a","pid":"evid-123456","amo":345100,"mer":"1234","per":[201901,201902,201903]
 }' \
-"/tagihan/0201007071"
+"/tagihan/010101010101"
 ```
 
 ## Response
@@ -55,30 +49,37 @@ Response dari pembayaran juga menghasilkan header `x-advice-url` yang bisa digun
 ```json
 /** 202 Accepted
 ....
-x-advice-url: /status/0201007071?inq=51f5793d30f9c2f63d15f077aa8ae72a&pid=evid-123456
+x-advice-url: /status/010101010101?nob=002008260001
 ....
 */
 {
-  "status":"accepted",
-  "data":{
-    "amo":345100,
-    "mer":"warteg123",
-    "per":[
-      201901,
-      201902,
-      201903
-    ],
-    "pid":"evid-123456",
-    "pat": "57A591AD8AC0E6531300",
-    "pop":"99",
-    "pts":1555679261846,
-    "inq":"51f5793d30f9c2f63d15f077aa8ae72a"
+  "status": "accepted",
+  "data": {
+    "cid": "010101002004",
+    "pid": "8ab1ef54-49a9-4bd7-a316-da885a0735eb",
+    "pat": "CD545FFF5E67079E8915",
+    "pop": "00",
+    "mer": "1234",
+    "inq": "357c5cd84b3d81f266310ba1588c051c",
+    "pts": 1598431592135,
+    "nob": "002008260001"
+  },
+  "meta": {
+    "jumlah_tagihan": null,
+    "jumlah_bayar": 747300,
+    "jumlah_masalah": null,
+    "lembar_tagihan": null,
+    "lembar_bayar": 1,
+    "lembar_masalah": null,
+    "periode_tagihan": null,
+    "periode_bayar": [202007],
+    "periode_masalah": null
   }
 }
 ```
 
 ::: danger
-`pat` harus dilampirkan pada cetakan rekening.
+`nob` harus dilampirkan pada cetakan rekening.
 :::
 
 ::: tip
@@ -86,4 +87,3 @@ x-advice-url: /status/0201007071?inq=51f5793d30f9c2f63d15f077aa8ae72a&pid=evid-1
 
 `unixtimestamp` = _floor (pts/1000)_
 :::
-

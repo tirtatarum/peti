@@ -1,4 +1,4 @@
-# Reconsiliation  <Badge text="beta" type="warn"/> 
+<!-- # Reconsiliation  <Badge text="beta" type="warn"/> 
 
 Data pembayaran bisa didapatkan di route `GET /audit`, data pembayaran yang dikeluarkan adalah data pembayaran saat request dilakukan.
 
@@ -11,4 +11,4 @@ Untuk mendapatkan data pembayaran pada tanggal tertentu, bisa dilakukan dengan m
 
 Berikut contoh dari response `/audit`
 
-<<< @/docs/snippets/audit.json
+<<< @/docs/snippets/audit.json -->

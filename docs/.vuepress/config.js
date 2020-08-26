@@ -1,6 +1,6 @@
 module.exports = {
   title: 'PeTi',
-  description: 'Pembayaran Tagihan PDAM Tirta Tarum Kabupaten Karawang',
+  description: 'Pembayaran Tagihan Air PDAM Tirta Patriot',
   head: [
     ['link', { rel: 'icon', href: '/peti.svg' }]
   ],
@@ -24,10 +24,10 @@ module.exports = {
             'authorization',
             'inquiry',
             'payment',
-            'reversal',
+            // 'reversal',
             'status',
             'webhook',
-            'reconsiliation',
+            // 'reconsiliation',
             'error',
           ]
         }

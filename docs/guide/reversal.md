@@ -1,4 +1,4 @@
-# Reversal <Badge text="beta" type="warn"/>
+<!-- # Reversal <Badge text="beta" type="warn"/>
 
 Pembatalan dapat dilakukan dengan melakukan `DELETE` request ke `/tagihan/:id`, request tersebut membutuhkan parameter dalam bentuk _querystring_ berupa `pid` dan `pat`
 
@@ -15,4 +15,4 @@ curl -X DELETE \
 "/tagihan/0201007071?pid=evid-123456&pat=57A591AD8AC0E6531300"
 ```
 
-Setelah pembatalan berhasil dilakukan, data `rev` pada [status](/guide/status.html) dan [rekonsiliasi](/guide/reconsiliation.html) akan berisi _value_ **1**
+Setelah pembatalan berhasil dilakukan, data `rev` pada [status](/guide/status.html) dan [rekonsiliasi](/guide/reconsiliation.html) akan berisi _value_ **1** -->

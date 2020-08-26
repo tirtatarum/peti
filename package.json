@@ -18,7 +18,7 @@
   "keywords": [
     "docs",
     "peti",
-    "tirta tarum"
+    "PDAM Tirta Patriot"
   ],
   "author": {
     "name": "Eko Eryanto",
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/tirtatarum/peti#readme",
   "devDependencies": {
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.5.4"
   }
 }

@@ -1,6 +1,6 @@
 {
   "headers": {
-    "user-agent": "id.tirtatarum.peti/2.0.0-beta.1",
+    "user-agent": "com.tirtapatriot.peti/1.0.0-RC.1",
     "content-type": "application/json;charset=utf-8",
     "authorization": "Custom Token is Here",
     "content-length": "431"
@@ -10,7 +10,7 @@
     "code": 409,
     "message": "paid before",
     "data": {
-      "cid": "0201007143",
+      "cid": "020100714312",
       "pid": "vz03utsger",
       "pat": "AEE06367424094C5578B",
       "mer": "Tester",
