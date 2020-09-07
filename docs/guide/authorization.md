@@ -26,7 +26,7 @@ Token tersebut dapat di-decode dengan skema [Base64](https://en.wikipedia.org/wi
 }
 ```
 
-::: warning
+::: warnin'
 Walaupun token tersebut bisa dengan mudah di-_decode_, merubah sebagian _value_ dari token akan mencegah pengaksesan layanan.
 :::
 
